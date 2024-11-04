@@ -10,6 +10,7 @@ class addtask extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            SizedBox(height:5,),
             Text(
               "Add Task",
               style: TextStyle(
@@ -17,13 +18,20 @@ class addtask extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontSize: 40),
             ),
+            SizedBox(height:5,),
             TextFormField(
               decoration:InputDecoration(
                 labelText: 'Add new task',
-                border:OutlineInputBorder(),
+              //  border:OutlineInputBorder(),
               ),
-            )
-          ],
+            ),
+                SizedBox(height:5),
+                MaterialButton(
+                  color:Colors.teal,onPressed:(){
+                },
+                child: Text("Add",style:TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                ),
+              ],
         ),
       ),
     );
